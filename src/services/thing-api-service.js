@@ -14,6 +14,7 @@ const ThingApiService = {
           : res.json()
       )
   },
+
   getThing(thingId) {
     return fetch(`${config.API_ENDPOINT}/things/${thingId}`, {
       headers: {
@@ -26,6 +27,7 @@ const ThingApiService = {
           : res.json()
       )
   },
+
   getThingReviews(thingId) {
     return fetch(`${config.API_ENDPOINT}/things/${thingId}/reviews`, {
       headers: {
@@ -38,6 +40,7 @@ const ThingApiService = {
           : res.json()
       )
   },
+
   postReview(thingId, text, rating) {
     return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
@@ -57,6 +60,12 @@ const ThingApiService = {
           : res.json()
       )
   }
-}
+
+
+};
 
 export default ThingApiService;
+
+
+
+
