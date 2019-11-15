@@ -8,7 +8,7 @@ export default class LoginForm extends Component {
     onLoginSuccess: () => {}
   };
 
-  state = { error: null };
+  state = { error: null }
 
   handleSubmitBasicAuth = ev => {
     ev.preventDefault()
